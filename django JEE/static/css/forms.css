@@ -1,0 +1,18 @@
+.input-color-picker{
+    appearance: square-button;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    padding: 1px 2px;
+}
+#freetime{
+    width: 30%;
+    height: 40%;
+}
+.hidden{
+    display: none;
+}
