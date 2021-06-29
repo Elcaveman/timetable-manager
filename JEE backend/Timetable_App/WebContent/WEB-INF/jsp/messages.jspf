@@ -1,0 +1,15 @@
+
+<c:choose>
+<c:when test="${sessionScope.failed!=null}">
+	<script>M.toast({html:"${failed}",classes:'red rounded' , displatLength:100000})</script>
+	<c:remove var="failed" scope="session" />
+</c:when>
+<c:when test="${sessionScope.denied!=null}">
+	<script>M.toast({html:"${denied}",classes:'gray rounded' , displatLength:2000})</script>
+	<c:remove var="denied" scope="session" />
+</c:when>
+<c:when test="${sessionScope.success!=null}">
+	<script>M.toast({html:"${success}",classes:'green rounded' , displatLength:2000})</script>
+	<c:remove var="success" scope="session" />
+</c:when>
+</c:choose>

@@ -1,0 +1,46 @@
+
+<style>
+         .hamburger{
+            display: block !important;
+        }
+        .hamburger a{
+        color:transparent !important;
+        }
+        .hamburger:focus{
+        	outline: none;
+    		background-color: transparent !important;
+        }
+    </style>
+    <header>
+            <div id="hamburger_container">
+              <button class="hamburger hamburger--minus" type="button">
+                  <a href="#" data-target="slide-out" class="sidenav-trigger">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </a>
+                </button>
+            </div>
+        
+            <div id="sidenav">
+            <ul id="slide-out" class="sidenav sidenav" style="max-width:200px !important;">
+              <li><div class="user-view">
+                  <div class="background">
+                    <img src="http://localhost:8000/static/img/office.jpg" style="max-height: 200px;">
+                  </div>
+                  <div class="animate fadeRight">
+                  <a href="#user"><img class="circle animate fadeRight" src="http://localhost:8000/static/img/yuna.jpg"></a>
+                  <a href="#name"><span class="white-text name">Teacher</span></a>
+                  <a href="#email"><span class="white-text email">${sessionScope.username}</span></a>
+                  </div>
+                </div>
+              </li>
+                <li><a href="/Timetable_App/" class="waves-effect"><i class="material-icons">home</i>Home</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="/Timetable_App/logout" class="waves-effect"><i class="material-icons" style="color:crimson">account_circle</i>Logout</a></li>
+                <li><a class="sidenav-close" href="#" style="color:crimson">Close Sidenav</a></li>
+           
+            </ul>
+            </div>
+            
+            </header>
